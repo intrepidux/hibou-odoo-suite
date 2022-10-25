@@ -149,11 +149,11 @@
         </xpath>
     </template>
 
-    <template id="confirmation" inherit_id="website_sale.confirmation">
+    <!-- <template id="confirmation" inherit_id="website_sale.confirmation">
         <xpath expr="//strong[@t-field='order.amount_total']" position="replace">
             <strong t-esc="payment_tx_id.amount" t-options="{'widget': 'monetary', 'display_currency': order.pricelist_id.currency_id}" />
         </xpath>
-    </template>
+    </template> -->
 
     <template id="payment_confirmation_status" inherit_id="website_sale.payment_confirmation_status">
         <xpath expr="//div[hasclass('oe_website_sale_tx_status')]/div[1]" position="attributes">
